@@ -4,16 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stainless Steel Gua Sha Massage Tool Kits | Use Manual</title>
-  <meta name="description" content="Use manual for stainless steel gua sha massage tool kits, including how to use each scraper, body area guide, care, safety, and after-sales support.">
+  <meta name="description" content="Online use manual for stainless steel gua sha massage tool kits, including kit options, how to use each tool, body area guide, care, safety, and after-sales support.">
   <style>
     :root {
-      --ink: #231915;
+      --ink: #221915;
+      --muted: #6f625b;
       --paper: #fffaf4;
-      --muted: #6c625d;
-      --line: #d9d0c8;
       --soft: #f4eee8;
-      --accent: #281b17;
-      --gold: #b98754;
+      --line: #ded4ca;
+      --accent: #251915;
+      --gold: #b68552;
+      --white: #fff;
+      --shadow: 0 18px 48px rgba(34, 25, 21, 0.14);
     }
 
     * {
@@ -26,75 +28,647 @@
 
     body {
       margin: 0;
-      background: #eee8e1;
+      background: #efe8df;
       color: var(--ink);
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.55;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
     }
 
     a {
       color: inherit;
     }
 
+    .wrap {
+      width: min(1160px, calc(100% - 28px));
+      margin: 0 auto;
+    }
+
     .hero {
-      background: var(--accent);
-      color: #fff;
-      padding: 34px 18px 28px;
+      background:
+        linear-gradient(rgba(37, 25, 21, 0.94), rgba(37, 25, 21, 0.94)),
+        radial-gradient(circle at 30% 0%, rgba(182, 133, 82, 0.42), transparent 38%);
+      color: var(--white);
+      padding: 44px 0 32px;
       text-align: center;
     }
 
     .hero h1 {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(30px, 8vw, 54px);
-      line-height: 1.08;
+      font-size: clamp(34px, 7vw, 62px);
+      line-height: 1.05;
       letter-spacing: 0;
     }
 
-    .hero .sub {
+    .manual-subtitle {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 12px;
       margin-top: 18px;
-      color: #efe8e2;
-      font-size: 15px;
+      color: #efe6de;
       text-transform: uppercase;
-      letter-spacing: 0;
+      font-size: 15px;
+      font-weight: 700;
     }
 
-    .hero .sub::before,
-    .hero .sub::after {
+    .manual-subtitle::before,
+    .manual-subtitle::after {
       content: "";
-      width: 42px;
+      width: 46px;
       height: 1px;
-      background: rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.46);
     }
 
-    .wrap {
-      width: min(1120px, calc(100% - 28px));
-      margin: 0 auto;
+    .hero p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      color: #ddcec3;
+      font-size: 15px;
     }
 
-    .product-panel {
-      margin: -18px auto 22px;
-      background: #fff;
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 250, 244, 0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-inner {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .nav a {
+      flex: 0 0 auto;
+      text-decoration: none;
+      padding: 9px 13px;
+      background: var(--white);
       border: 1px solid var(--line);
-      box-shadow: 0 14px 38px rgba(35, 25, 21, 0.14);
-      overflow: hidden;
+      font-size: 13px;
+      font-weight: 700;
     }
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 0;
-      align-items: center;
+    section {
+      margin: 22px 0;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
     }
 
-    .product-image {
-      min-height: 260px;
-      padding: 22px;
+    .section-head {
       display: flex;
       align-items: center;
-      justify-content: center;
-      background: #fff;
+      gap: 16px;
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
     }
+
+    .section-head h2 {
+      margin: 0;
+      padding: 9px 14px;
+      background: var(--accent);
+      color: var(--white);
+      font-size: 18px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .section-head span {
+      height: 1px;
+      background: var(--line);
+      flex: 1;
+    }
+
+    .kit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 18px;
+    }
+
+    .kit-card {
+      position: relative;
+      min-height: 420px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .kit-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background: var(--white);
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kit-copy {
+      padding: 15px;
+    }
+
+    .kit-copy h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .kit-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .kit-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(180deg, transparent 20%, rgba(37, 25, 21, 0.92) 100%);
+      color: var(--white);
+      opacity: 0;
+      transition: opacity 180ms ease;
+      pointer-events: none;
+    }
+
+    .kit-card:hover .kit-overlay {
+      opacity: 1;
+    }
+
+    .kit-overlay div {
+      padding: 18px;
+    }
+
+    .kit-overlay b {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .kit-overlay ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #efe6de;
+      font-size: 14px;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      padding: 18px;
+    }
+
+    .tool-card {
+      display: grid;
+      grid-template-columns: 142px 1fr;
+      gap: 16px;
+      align-items: center;
+      border: 1px solid var(--line);
+      background: var(--white);
+      padding: 14px;
+      min-height: 166px;
+    }
+
+    .tool-card img {
+      width: 142px;
+      height: 126px;
+      object-fit: contain;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      padding: 10px;
+    }
+
+    .tool-card h3 {
+      margin: 0 0 7px;
+      font-size: 18px;
+    }
+
+    .tool-card p {
+      margin: 0 0 7px;
+      color: #322722;
+      font-size: 14px;
+    }
+
+    .tool-card small {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .body-guide {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.85fr) 1fr;
+      gap: 20px;
+      padding: 18px;
+      align-items: center;
+    }
+
+    .body-image {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 14px;
+    }
+
+    .body-image img {
+      width: 100%;
+      max-height: 640px;
+      object-fit: contain;
+    }
+
+    .guide-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .guide-item {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      padding: 13px;
+    }
+
+    .guide-item h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+
+    .guide-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tips {
+      margin-top: 14px;
+      padding: 16px;
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .tips h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .tips ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #efe6de;
+      font-size: 14px;
+    }
+
+    .safe-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      padding: 18px;
+    }
+
+    .safe-card {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      padding: 16px;
+    }
+
+    .safe-card h3 {
+      margin: 0 0 9px;
+      font-size: 17px;
+    }
+
+    .safe-card p,
+    .safe-card li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .safe-card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .support {
+      background: var(--accent);
+      color: var(--white);
+      padding: 28px 18px;
+    }
+
+    .support h2 {
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.1;
+    }
+
+    .support p {
+      margin: 0 0 8px;
+      color: #efe6de;
+    }
+
+    .email {
+      margin-top: 12px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 28px 16px 46px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .kit-grid,
+      .tool-grid,
+      .body-guide,
+      .safe-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .kit-card {
+        min-height: 0;
+      }
+
+      .kit-card img {
+        height: auto;
+        max-height: 320px;
+      }
+
+      .kit-overlay {
+        position: static;
+        opacity: 1;
+        background: var(--accent);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 34px 0 24px;
+      }
+
+      .tool-card {
+        grid-template-columns: 96px 1fr;
+        gap: 12px;
+        padding: 12px;
+      }
+
+      .tool-card img {
+        width: 96px;
+        height: 92px;
+      }
+
+      .section-head {
+        gap: 10px;
+        padding: 14px;
+      }
+
+      .section-head h2 {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>STAINLESS STEEL<br>GUA SHA MASSAGE<br>TOOL KITS</h1>
+      <div class="manual-subtitle">Use Manual</div>
+      <p>Choose your kit below, then follow the matching tool guide, body area reference, and care instructions.</p>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Manual navigation">
+    <div class="wrap nav-inner">
+      <a href="#kits">Kit Options</a>
+      <a href="#how-to-use">How to Use</a>
+      <a href="#body-guide">Body Area Guide</a>
+      <a href="#care-safety">Care & Safety</a>
+      <a href="#support">Support</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="kits">
+      <div class="section-head"><h2>Kit Options</h2><span></span></div>
+      <div class="kit-grid">
+        <article class="kit-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/kit-1-1500-1.png" alt="Kit A stainless steel gua sha set with S-shaped, D-shaped, and C-shaped scrapers">
+          <div class="kit-copy">
+            <h3>Kit A: S + D + C</h3>
+            <p>Body scraping set for shoulders, back, arms, legs, and larger muscle areas.</p>
+          </div>
+          <div class="kit-overlay">
+            <div>
+              <b>Included Tools</b>
+              <ul>
+                <li>S-Shaped Scraper</li>
+                <li>D-Shaped Scraper</li>
+                <li>C-Shaped Scraper</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="kit-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/kit-2-1500-1-1.png" alt="Kit B stainless steel gua sha set with S-shaped, D-shaped, and crescent scrapers">
+          <div class="kit-copy">
+            <h3>Kit B: S + D + M</h3>
+            <p>Grip and contour set for controlled strokes, curved areas, and daily body care.</p>
+          </div>
+          <div class="kit-overlay">
+            <div>
+              <b>Included Tools</b>
+              <ul>
+                <li>S-Shaped Scraper</li>
+                <li>D-Shaped Scraper</li>
+                <li>Crescent Scraper</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="kit-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/kit-3-1500-1-1.png" alt="Kit C facial gua sha set with lip-shaped, heart-shaped, and trigger point roller pen tools">
+          <div class="kit-copy">
+            <h3>Kit C: L + H + T</h3>
+            <p>Facial massage set for gentle gliding, contour care, and eye-area massage.</p>
+          </div>
+          <div class="kit-overlay">
+            <div>
+              <b>Included Tools</b>
+              <ul>
+                <li>Lip-Shaped Scraper</li>
+                <li>Heart-Shaped Scraper</li>
+                <li>Trigger Point Roller Pen</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="how-to-use">
+      <div class="section-head"><h2>How to Use</h2><span></span></div>
+      <div class="tool-grid">
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/C-Shaped-Scraper.png" alt="C-Shaped Scraper">
+          <div>
+            <h3>C-Shaped Scraper (C)</h3>
+            <p><b>Best for:</b> back, calves, hamstrings, thighs, and arms.</p>
+            <small>Use long, smooth strokes following the natural direction of the muscle.</small>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/S-Shaped-Scraper.png" alt="S-Shaped Scraper">
+          <div>
+            <h3>S-Shaped Scraper (S)</h3>
+            <p><b>Best for:</b> neck, shoulders, arms, legs, and curved body areas.</p>
+            <small>Use the curved edge to fit body contours. Glide with light to moderate pressure.</small>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/D-Shaped-Scraper.png" alt="D-Shaped Scraper">
+          <div>
+            <h3>D-Shaped Scraper (D)</h3>
+            <p><b>Best for:</b> shoulders, waist, forearms, feet, and smaller muscle areas.</p>
+            <small>Hold through the grip opening for better control. Use short, steady strokes.</small>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/M-Shaped-Scraper.png" alt="Crescent Scraper">
+          <div>
+            <h3>Crescent Scraper (M)</h3>
+            <p><b>Best for:</b> shoulders, back, thighs, calves, and broad curved areas.</p>
+            <small>Use the long curved edge for smooth sweeping strokes over larger sections.</small>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/Heart-Shaped-Scraper.png" alt="Heart-Shaped Scraper">
+          <div>
+            <h3>Heart-Shaped Scraper (H)</h3>
+            <p><b>Best for:</b> cheeks, jawline, neck, and facial contours.</p>
+            <small>Glide upward and outward with gentle pressure. Avoid direct use on irritated skin.</small>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/Lip-Shaped-Scraper.png" alt="Lip-Shaped Scraper">
+          <div>
+            <h3>Lip-Shaped Scraper (L)</h3>
+            <p><b>Best for:</b> cheeks, jawline, forehead, and delicate facial curves.</p>
+            <small>Use the smooth edge for slow facial massage. Keep strokes light and even.</small>
+          </div>
+        </article>
+
+        <article class="tool-card">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/Trigger-Point-Roller-Pen.png" alt="Trigger Point Roller Pen">
+          <div>
+            <h3>Trigger Point Roller Pen (T)</h3>
+            <p><b>Best for:</b> eye area, temples, smile lines, and small facial points.</p>
+            <small>Roll or press gently. Use with eye cream or serum if desired.</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="body-guide">
+      <div class="section-head"><h2>Body Area Guide</h2><span></span></div>
+      <div class="body-guide">
+        <div class="body-image">
+          <img src="https://cherrysourcing.com/wp-content/uploads/2026/07/body-area-scaled.png" alt="Body area and matching scrapers reference">
+        </div>
+        <div>
+          <div class="guide-list">
+            <article class="guide-item">
+              <h3>Neck & Shoulders</h3>
+              <p>Recommended tools: S, D, M. Use gentle, controlled strokes and follow natural body contours.</p>
+            </article>
+            <article class="guide-item">
+              <h3>Back & Waist</h3>
+              <p>Recommended tools: C, D, M. Use long strokes for larger areas and short strokes for focused pressure.</p>
+            </article>
+            <article class="guide-item">
+              <h3>Arms</h3>
+              <p>Recommended tools: S, C, D. Glide along the muscle direction with light to moderate pressure.</p>
+            </article>
+            <article class="guide-item">
+              <h3>Thighs & Calves</h3>
+              <p>Recommended tools: C, S, M. Use smooth sweeping strokes over larger sections.</p>
+            </article>
+            <article class="guide-item">
+              <h3>Face & Jawline</h3>
+              <p>Recommended tools: H, L. Glide upward and outward with gentle pressure only.</p>
+            </article>
+            <article class="guide-item">
+              <h3>Eye Area & Small Points</h3>
+              <p>Recommended tool: T. Roll or press gently around temples, smile lines, and small facial points.</p>
+            </article>
+          </div>
+          <div class="tips">
+            <h3>Use Tips</h3>
+            <ul>
+              <li>Start with light pressure and increase gradually.</li>
+              <li>Use with massage oil, lotion, body cream, eye cream, or serum as appropriate.</li>
+              <li>Keep each body area within 1-3 minutes.</li>
+              <li>Move in slow, even strokes. Do not scrape aggressively.</li>
+              <li>Stop immediately if sharp pain, numbness, or discomfort occurs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="care-safety">
+      <div class="section-head"><h2>Care & Safety</h2><span></span></div>
+      <div class="safe-grid">
+        <article class="safe-card">
+          <h3>Do Not Use On</h3>
+          <ul>
+            <li>Open wounds or broken skin</li>
+            <li>Bruises, swelling, or irritated skin</li>
+            <li>Varicose veins</li>
+            <li>Face, throat, or sensitive areas with excessive pressure</li>
+            <li>Areas with recent surgery</li>
+          </ul>
+        </article>
+        <article class="safe-card">
+          <h3>Important</h3>
+          <p>This product is for external use only. Consult a healthcare professional before use if you are pregnant, have a medical condition, or are unsure whether this product is suitable for you.</p>
+        </article>
+        <article class="safe-card">
+          <h3>Cleaning</h3>
+          <p>Wash with warm water and mild soap after each use. Dry completely before storage.</p>
+        </article>
+        <article class="safe-card">
+          <h3>Storage</h3>
+          <p>Store tools in the included pouch. Keep away from children and avoid dropping the tools.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="support" class="support">
+      <h2>WE ARE HERE<br>TO HELP</h2>
+      <p>Questions about using your stainless steel gua sha tools?</p>
+      <p>Contact us for product guidance, usage tips, and after-sales support.</p>
+      <div class="email">Email: service@mifacie.com</div>
+    </section>
+  </main>
+
+  <footer>
+    Multiple kit options sold separately. Use only the tools included in your purchased kit.
+  </footer>
+</body>
+</html>
